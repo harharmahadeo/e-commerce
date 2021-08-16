@@ -1,0 +1,168 @@
+body {
+  background: #ffffff;
+}
+
+.nav .nav-link {
+  display: flex;
+  align-items: center;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  padding: 0.75rem 1.5rem;
+  color: #7E8299;
+  font-size: 17px;
+}
+
+.nav .sign-up {
+  background: #3699ff;
+  color: #ffffff;
+  padding: 10px 25px;
+  border-radius: 25px;
+}
+
+.bg-land {
+  background: #f5f5f5;
+  padding-top: 15px;
+}
+
+.sec-pad1 {
+  padding: 150PX 0PX;
+}
+
+.bg-land h1 {
+  color: #3699ff;
+  font-weight: 900;
+  font-size: 35px;
+}
+
+.welcome {
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.sec-pad {
+  padding: 100PX 0PX;
+}
+
+.sec-pad h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 17px;
+  color: #a59999;
+}
+
+.login-media-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.lg-button {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+.blktitle-tp{
+    margin-top:70px;
+}
+.white-box {
+  background: #ffffff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 60px 40px;
+
+  img {
+    width: 160px;
+    margin-bottom: 25px;
+  }
+
+  .btm-line {
+    margin-bottom: 0px;
+    margin-top: 25px;
+    width:50%;
+  }
+
+  h3 {
+    color: #3699ff;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+}
+.btmshape{
+    width:100%;
+    left:0px;
+    right:0px;
+}
+
+.num-box {
+  border: 1px solid #f0f5f8;
+  text-align: center;
+  padding: 40px;
+  border-radius:10px;
+
+  img {
+    margin-bottom: 40px;
+  }
+
+  h1 {
+    margin-bottom: 0px;
+    font-weight: 500;
+  }
+}
+
+.bg-light-sky {
+  background: #f9fcff;
+
+  .testi-box {
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #f0f5f8;
+
+    h3 {
+      font-weight: 700;
+    }
+
+    p {
+      margin-bottom: 0px;
+    }
+
+    .quate-img {
+      width: 100px;
+      margin-top: -90px;
+      z-index: -1;
+      opacity: 65%;
+    }
+  }
+}
+
+footer {
+  background: #3699ff;
+  padding: 20px 0px;
+  text-align: center;
+  p {
+    color: #ffffff;
+    margin-bottom: 0px;
+  }
+  a{
+      color:#ffffff;
+  }
+}
+@media(max-width:767px){
+  .white-box{
+      margin-bottom:70px;
+  }
+  .blktitle-tp {
+      margin-top:0px;
+  }
+  .white-box[_ngcontent-ng-cli-universal-c106] .btm-line[_ngcontent-ng-cli-universal-c106] {
+    width: 200px;
+  }
+ }

@@ -1,0 +1,152 @@
+.login.login-6 {
+
+    .login-divider {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+
+        > div {
+            height: 400px;
+            background: #ffffff;
+            width: 30px;
+            -webkit-box-shadow: -19px 0 35px -7px rgba(0, 0, 0, 0.05);
+            box-shadow: -19px 0 35px -7px rgba(0, 0, 0, 0.05);
+        }
+    }
+}
+.divider-icon {
+    margin-top: -10px;
+    span{
+          background: #ffffff;
+          /* margin-top: -20px; */
+          padding: 11px;
+         font-weight: 600;
+         border: 1px solid #f5f5f5;
+         border-radius: 25px;
+    }
+  }
+.divider-btm {
+    border-top: 1px solid #f5f5f5;
+}
+.p-10{
+    padding:10px !important;
+}
+.login-media-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    flex-wrap: wrap;
+
+    .log-button {
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+
+        img {
+            width: 22px;
+        }
+    }
+
+    .google {
+        background: #ffffff;
+        border: 1px solid #f5f5f5;
+        padding: 10px 20px;
+        color: #333333;
+        font-weight: 500;
+        margin-right: 10px;
+    }
+
+    .facebook {
+        background: #ffffff;
+        border: 1px solid #f5f5f5;
+        padding: 10px 20px;
+        color: #333333;
+        font-weight: 500;
+        margin-right: 10px;
+    }
+
+    .instagram {
+        background: #ffffff;
+        border: 1px solid #f5f5f5;
+        border: 1px solid #f5f5f5;
+        padding: 10px 20px;
+        color: #333333;
+        font-weight: 500;
+        margin-right: 10px;
+    }
+}
+
+
+@media (max-width:1090px) {
+    .login-media-buttons {
+        .google {
+            margin-bottom: 10px;
+            width: 100%
+        }
+        .facebook {
+            margin-bottom: 10px;
+            width: 100%
+        }
+        .instagram {
+            margin-bottom: 10px;
+            width: 100%
+        }
+    }
+}
+
+    @media (min-width: 992px) {
+        .login.login-6 {
+            .login-wrapper {
+                width: 100%;
+                max-width: 450px;
+            }
+        }
+    }
+
+    @media (max-width: 991.98px) {
+        .login.login-6 {
+            .login-wrapper {
+                width: 100%;
+                max-width: 350px;
+            }
+
+            .login-divider {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                padding-top: 0;
+                width: 60%;
+                margin: 5px auto;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+
+                > div {
+                    height: 30px;
+                    background: #ffffff;
+                    width: 100%;
+                    -webkit-box-shadow: 0 -15px 30px -10px rgba(0, 0, 0, 0.1);
+                    box-shadow: 0 -15px 30px -10px rgba(0, 0, 0, 0.1);
+                }
+            }
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        .login.login-6 {
+            .login-wrapper {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }

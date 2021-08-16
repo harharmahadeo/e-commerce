@@ -1,0 +1,43 @@
+ <!--begin::Subheader-->
+<div class="subheader py-2 py-lg-4 subheader-solid" id="kt_subheader">
+  <div class="container-fluid d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">
+    <div class="d-flex align-items-center flex-wrap mr-2">
+      <h5 class="text-dark font-weight-bold mt-2 mb-2 mr-5">Authorize Etsy</h5>
+    </div>
+  </div>
+</div>
+<!--end::Subheader-->
+<!--begin::Entry-->
+<div class="d-flex flex-column-fluid">
+  <!--begin::Container-->
+  <div class="container-fluid pt-85">
+    <!--begin::Card-->
+    <div class="card card-custom gutter-b crd-height">
+      <div class="card-header">
+        <div class="card-title">
+          <h3 class="card-label">Set up Account</h3>
+        </div>
+      </div>
+      <div class="card-body">
+        <!--begin::Accordion-->
+        <div class="accordion accordion-light accordion-toggle-arrow" id="accordionExample5">
+          <div class="card">
+            <div class="card-header" id="headingOne5">
+              <div class="card-title" data-toggle="collapse" data-target="#collapseOne5">
+                <img src="assets/media/logos/etsylogo.svg" class="mr-5" />   Connect with Esty
+              </div>
+            </div>
+            <div id="collapseOne5" class="collapse show" data-parent="#accordionExample5">
+              <div class="card-body">
+                <button type="button" (click)="connect()" class="btn btn-light-primary font-weight-bold mr-5" *ngIf="!tokendetails">Connect Etsy account</button>
+                <span (click)="refreshaccesstoken()" class="btn btn-light-primary font-weight-bold mr-5" *ngIf="tokendetails">Account Linked : {{linked_account_name}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end::Card-->
+    </div>
+    <!--end::Container-->
+  </div>
+  <!--end::Entry-->

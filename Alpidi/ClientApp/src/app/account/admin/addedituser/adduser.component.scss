@@ -1,0 +1,91 @@
+.accordion.accordion-toggle-arrow {
+  .card {
+    .card-header {
+      .card-title {
+        color: #3F4254;
+        position: relative;
+      }
+    }
+  }
+}
+
+.accordion.accordion-light {
+  .card {
+    &:first-child {
+      .card-header {
+        margin: 0;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #f5f5f5;
+      }
+    }
+
+    .card-body {
+      padding: 3rem 0 3rem 0;
+    }
+  }
+}
+
+.crd-height {
+  height: calc(100vh - 246px);
+}
+
+tr {
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.edit-icon {
+  width: 35px;
+  height: 35px;
+  background: #d2f2cf;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0px 2.5px;
+
+  img {
+    width: 25px;
+  }
+}
+
+.edit-icon:hover {
+  background: #d2f2cf;
+}
+
+.delete-icon {
+  width: 35px;
+  height: 35px;
+  background: #f5dce0;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0px 2.5px;
+
+  img {
+    width: 25px;
+  }
+}
+
+.delete-icon:hover {
+  background: #f5dce0;
+}
+
+.stock-icon {
+  width: 35px;
+  height: 35px;
+  background: #dbdcf2;
+  border-radius: 5px;
+  padding: 5px;
+  height: 32px;
+  margin: 0px 2.5px;
+
+  img {
+    width: 25px;
+  }
+}
+
+.stock-icon:hover {
+  background: #dbdcf2;
+}
+.symbol > img {
+  display: flex;
+  border-radius: 50px;
+}
+

@@ -1,0 +1,50 @@
+@import '~src/scss-1.1.0.0/variables';
+@import '~src/scss-1.1.0.0/fonts';
+@import '~src/scss-1.1.0.0/mixins';
+
+ul.pagination {
+  li {
+    display: inline-block;
+    margin: 0 .5rem;
+  }
+
+  li.is-arrow {
+    font-size: 1.375rem;
+    color: $text-grey-dk;
+    position: relative;
+    top: .125rem;
+  }
+
+  li.disabled .page-link {
+    pointer-events: none;
+    cursor: auto;
+    border-color: #dee2e6;
+    color: #8b929c;
+    font-size: 14px;
+  }
+
+  span {
+    width: 50px;
+    height: 50px;
+    display: block;
+    cursor: pointer;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    @include transition();
+    font-size: 1.125rem;
+    @include MontserratSemiBold();
+
+    &:hover {
+      background: $text-grey-dk;
+      color: $white;
+    }
+  }
+
+  li.active {
+    span {
+      color: $white;
+      background: $text-grey-dk;
+    }
+  }
+}

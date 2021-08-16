@@ -1,0 +1,249 @@
+ <!--begin::Subheader-->
+<div class="subheader py-2 py-lg-4 subheader-solid" id="kt_subheader">
+  <div class="container-fluid d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">
+    <div class="d-flex align-items-center flex-wrap mr-2">
+      <h5 class="text-dark font-weight-bold mt-2 mb-2 mr-5">T-shirt </h5>
+    </div>
+  </div>
+</div>
+<!--end::Subheader-->
+<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+  <!--begin::Entry-->
+  <div class="d-flex flex-column-fluid pt-85">
+    <!--begin::Container-->
+    <div class="container-fluid">
+      <div class="mrb-25">
+        <div class="text-right mb-10">
+          <button type="button" class="btn btn-light">Back</button>
+        </div>
+        <!--begin::Page Layout-->
+        <div class="d-flex flex-row">
+          <!--begin::Layout-->
+        </div>
+        <div class="flex-row-fluid">
+          <!--begin::Section-->
+          <div class="row">
+            <div class="col-md-7 col-lg-12 col-xxl-7">
+              <!--begin::Engage Widget 14-->
+              <div class="card card-custom card-stretch gutter-b">
+                <div class="card-body p-15 pb-20">
+                  <div class="row mb-17">
+                    <div class="col-xxl-5 mb-11 mb-xxl-0">
+                      <!--begin::Image-->
+                      <div class="card card-custom card-stretch">
+                        <div class="card-body p-0 rounded px-10 py-15 d-flex align-items-center justify-content-center">
+                          <img src="{{listingdetails?.img75}}" class="mw-100 w-200px" style="transform: scale(1.6);" />
+                        </div>
+                      </div>
+                      <!--end::Image-->
+                    </div>
+                    <div class="col-xxl-7 pl-xxl-11">
+                      <h2 class="font-weight-bolder text-dark mb-7" style="font-size: 32px;">{{listingdetails?.title}}</h2>
+                      <div class="font-size-h2 mb-7 text-dark-50">
+                        From
+                        <span class="text-primary font-weight-boldest ml-2">${{listingdetails?.price.amount}}</span>
+                      </div>
+                      <div class="line-height-xl">{{listingdetails?.description}}</div>
+                    </div>
+                  </div>
+                  <div class="row mb-6">
+                    <!--begin::Info-->
+                    <div class="col-6 col-md-4">
+                      <div class="mb-8 d-flex flex-column">
+                        <span class="text-dark font-weight-bold mb-4">Size</span>
+                        <span class="text-muted font-weight-bolder font-size-lg">S , M , XL , XXL, L</span>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="mb-8 d-flex flex-column">
+                        <span class="text-dark font-weight-bold mb-4">Materials</span>
+                        <span class="text-muted font-weight-bolder font-size-lg">{{listingdetails?.materials.join(', ')}}</span>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="mb-8 d-flex flex-column">
+                        <span class="text-dark font-weight-bold mb-4">Is Customizable?</span>
+                        <span class="text-muted font-weight-bolder font-size-lg">{{listingdetails?.is_customizable ? 'Yes' : 'No'}}</span>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="mb-8 d-flex flex-column">
+                        <span class="text-dark font-weight-bold mb-4">Occasion</span>
+                        <span class="text-muted font-weight-bolder font-size-lg">{{listingdetails?.occasion? 'Yes' : 'No'}}</span>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="mb-8 d-flex flex-column">
+                        <span class="text-dark font-weight-bold mb-4">In Stock</span>
+                        <span class="text-muted font-weight-bolder font-size-lg">{{listingdetails?.quantity}}</span>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="mb-8 d-flex flex-column">
+                        <span class="text-dark font-weight-bold mb-4">When made it?</span>
+                        <span class="text-muted font-weight-bolder font-size-lg">{{listingdetails?.when_made}}</span>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="mb-8 d-flex flex-column">
+                        <span class="text-dark font-weight-bold mb-4">Who made it?</span>
+                        <span class="text-muted font-weight-bolder font-size-lg">{{listingdetails?.who_made}}</span>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="mb-8 d-flex flex-column">
+                        <span class="text-dark font-weight-bold mb-4">State</span>
+                        <span class="text-muted font-weight-bolder font-size-lg">{{listingdetails?.state}}</span>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="mb-8 d-flex flex-column">
+                        <span class="text-dark font-weight-bold mb-4">Is Variations</span>
+                        <span class="text-muted font-weight-bolder font-size-lg">{{listingdetails?.has_variations? 'Yes' : 'No'}}</span>
+                      </div>
+                    </div>
+
+                    <!--end::Info-->
+                  </div>
+                </div>
+              </div>
+              <!--end::Engage Widget 14-->
+            </div>
+            <div class="col-md-5 col-lg-12 col-xxl-5">
+              <!--begin::List Widget 19-->
+              <div class="card card-custom card-stretch card-stretch-half gutter-b">
+                <!--begin::Body-->
+                <div class="card-body pt-2">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <div>
+                          <h3 class="card-title align-items-start flex-column mt-10">
+                            <span class="card-label font-weight-bold font-size-h4 text-dark-75 mb-3">Tag</span>
+                          </h3>
+                          <div>
+                            <span class="label label-lg label-light-warning label-inline font-weight-bold py-6 mr-5 mt-5" *ngFor="let item of listingdetails?.tags">{{item}}</span>
+                          </div>
+                        </div>
+
+                        <div>
+                          <h3 class="card-title align-items-start flex-column mt-10">
+                            <span class="card-label font-weight-bold font-size-h4 text-dark-75 mb-3">Uploaded Vector File</span>
+                          </h3>
+                        </div>
+                        <div class="uppy" id="kt_uppy_5">
+                          <div class="uppy-wrapper">
+                            <div class="uppy-Root uppy-FileInput-container">
+                              <input class="uppy-FileInput-input uppy-input-control" type="file" name="files[]" multiple="" id="kt_uppy_5_input_control" style="" (change)="selectFiles($event)">
+
+                              <button class="btn btn-success btn-sm"
+                                      [disabled]="!selectedFiles"
+                                      (click)="uploadFiles()">
+                                Upload
+                              </button>
+
+                              <label class="uppy-input-label btn btn-light-secondary btn-sm btn-bold up-box" for="kt_uppy_5_input_control">
+                                <svg aria-hidden="true" focusable="false" class="uppy-c-icon uppy-DragDrop-arrow" width="16" height="16" viewBox="0 0 16 16"><path d="M11 10V0H5v10H2l6 6 6-6h-3zm0 0" fill-rule="evenodd"></path></svg>
+                                <div> Upload files </div>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="uppy-list" *ngFor="let item of listingdetails?.vectorfiles">
+                            <img src="{{item.fileDownloadUri}}" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <!--end::Body-->
+              </div>
+              <div class="card card-custom card-stretch card-stretch-half gutter-b">
+                <!--begin::Body-->
+                <div class="card-body pt-2">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <div>
+                          <h3 class="card-title align-items-start flex-column mt-10">
+                            <span class="card-label font-weight-bold font-size-h4 text-dark-75 mb-3">Customized T-shirts</span>
+                          </h3>
+                          <div>
+                            <div class="form-group py-2 m-0">
+                              <label class="fs-1p3">Enter Tagline Text</label>
+                              <input type="text" name="tagline" autocomplete="off" required="" class="form-control h-auto placeholder-dark-75">
+                            </div>
+                            <div class="form-group">
+                              <label class="fs-1p3">Choose Font</label>
+                              <select class="form-control" id="exampleSelect1">
+                                <option>Choose Profile</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label class="fs-1p3">Choose Text color</label>
+                              <select class="form-control" id="exampleSelect1">
+                                <option>Choose Profile</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <!--end::Body-->
+              </div>
+              <!--end::List Widget 19-->
+            </div>
+          </div>
+          <!--end::Section-->
+          <!--begin::Section-->
+          <!--begin::Advance Table Widget 10-->
+          <div class="card card-custom">
+            <!--begin::Header-->
+            <div class="card-header border-0 py-5">
+              <h3 class="card-title align-items-start flex-column">
+                <span class="card-label font-weight-bolder text-dark">Photos</span>
+              </h3>
+            </div>
+            <!--end::Header-->
+            <!--begin::Body-->
+            <div class="card-body py-0">
+              <div>
+                <ul class="pro-img" *ngFor="let item of listingdetails?.images">
+                  <li><img src="{{item.url_570xN}}"></li>
+                </ul>
+              </div>
+            </div>
+            <!--end::Body-->
+          </div>
+        </div>
+        <!--end::Layout-->
+      </div>
+      <!--end::Page Layout-->
+    </div>
+    <!--end::Container-->
+  </div>
+  <!--end::Entry-->
+</div>
+
+
+
+
+
+
+

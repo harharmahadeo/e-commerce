@@ -1,0 +1,167 @@
+ <!--begin::Subheader-->
+<div class="subheader py-2 py-lg-4 subheader-solid" id="kt_subheader">
+  <div class="container-fluid d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">
+    <div class="d-flex align-items-center flex-wrap mr-2">
+      <h5 class="text-dark font-weight-bold mt-2 mb-2 mr-5">All User</h5>
+    </div>
+  </div>
+</div>
+<!--end::Subheader-->
+<!--begin::Entry-->
+<div class="d-flex flex-column-fluid">
+  <!--begin::Container-->
+  <div class="container-fluid pt-85">
+    <!--begin::Card-->
+    <div class="text-right mb-10">
+      <button type="button" class="btn btn-green">Edit</button>
+    </div>
+    <div class="card card-custom card-shadowless rounded-top-0">
+      <!--begin::Body-->
+      <div class="card-body p-0">
+        <div class="row justify-content-center py-8 px-8 py-lg-15 px-lg-10">
+          <div class="col-xl-12 col-xxl-10">
+            <!--begin::Wizard Form-->
+            <form class="form fv-plugins-bootstrap fv-plugins-framework" id="kt_form">
+              <div class="row justify-content-center">
+                <div class="col-xl-9">
+                  <!--begin::Wizard Step 1-->
+                  <div class="my-5 step" data-wizard-type="step-content" data-wizard-state="current">
+                    <h5 class="text-dark font-weight-bold mb-10">User's Profile Details:</h5>
+                    <!--begin::Group-->
+                    <div class="form-group row">
+                      <div class="col-lg-9 col-xl-9">
+                        <div class="image-input image-input-outline" id="kt_user_add_avatar">
+                          <div class="image-input-wrapper" style="background-image: url(/metronic/theme/html/demo1/dist/assets/media/users/100_6.jpg)"></div>
+                          <label class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="change" data-toggle="tooltip" title="" data-original-title="Change avatar">
+                            <i class="fa fa-pen icon-sm text-muted"></i>
+                            <input type="file" name="profile_avatar" accept=".png, .jpg, .jpeg">
+                            <input type="hidden" name="profile_avatar_remove">
+                          </label>
+                          <span class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="cancel" data-toggle="tooltip" title="" data-original-title="Cancel avatar">
+                            <i class="ki ki-bold-close icon-xs text-muted"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end::Group-->
+                    <!--begin::Group-->
+                    <div class="form-group row fv-plugins-icon-container">
+                      <label class="col-xl-3 col-lg-3 col-form-label">First Name</label>
+                      <div class="col-lg-9 col-xl-9">
+                        <input class="form-control form-control-solid form-control-lg" name="firstname" type="text" value="">
+                        <div class="fv-plugins-message-container"></div>
+                      </div>
+                    </div>
+                    <!--end::Group-->
+                    <!--begin::Group-->
+                    <div class="form-group row fv-plugins-icon-container">
+                      <label class="col-xl-3 col-lg-3 col-form-label">Last Name</label>
+                      <div class="col-lg-9 col-xl-9">
+                        <input class="form-control form-control-solid form-control-lg" name="lastname" type="text" value="">
+                        <div class="fv-plugins-message-container"></div>
+                      </div>
+                    </div>
+                    <!--end::Group-->
+                    <!--begin::Group-->
+                    <div class="form-group row fv-plugins-icon-container">
+                      <label class="col-xl-3 col-lg-3 col-form-label">Email Address</label>
+                      <div class="col-lg-9 col-xl-9">
+                        <div class="input-group input-group-solid input-group-lg">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">
+                              <i class="la la-at"></i>
+                            </span>
+                          </div>
+                          <input type="text" class="form-control form-control-solid form-control-lg" name="email" value="">
+                        </div>
+                        <div class="fv-plugins-message-container"></div>
+                      </div>
+                    </div>
+                    <!--end::Group-->
+                    <h5 class="text-dark font-weight-bold mb-10">Password Detail:</h5>
+                    <!--begin::Group-->
+                    <div class="form-group row fv-plugins-icon-container">
+                      <label class="col-xl-3 col-lg-3 col-form-label">Password</label>
+                      <div class="col-lg-9 col-xl-9">
+                        <div class="input-group input-group-solid input-group-lg">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">
+                              <i class="la la-at"></i>
+                            </span>
+                          </div>
+                          <input type="password" class="form-control form-control-solid form-control-lg" name="email" value="">
+                        </div>
+                        <div class="fv-plugins-message-container"></div>
+                      </div>
+                    </div>
+                    <!--end::Group-->
+                    <!--begin::Group-->
+                    <div class="form-group row fv-plugins-icon-container">
+                      <label class="col-xl-3 col-lg-3 col-form-label">New Password</label>
+                      <div class="col-lg-9 col-xl-9">
+                        <div class="input-group input-group-solid input-group-lg">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">
+                              <i class="la la-at"></i>
+                            </span>
+                          </div>
+                          <input type="password" class="form-control form-control-solid form-control-lg" name="email" value="">
+                        </div>
+                        <div class="fv-plugins-message-container"></div>
+                      </div>
+                    </div>
+                    <!--end::Group-->
+                    <!--begin::Group-->
+                    <div class="form-group row fv-plugins-icon-container">
+                      <label class="col-xl-3 col-lg-3 col-form-label">Confirm Password</label>
+                      <div class="col-lg-9 col-xl-9">
+                        <div class="input-group input-group-solid input-group-lg">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">
+                              <i class="la la-at"></i>
+                            </span>
+                          </div>
+                          <input type="password" class="form-control form-control-solid form-control-lg" name="email" value="">
+                        </div>
+                        <div class="fv-plugins-message-container"></div>
+                      </div>
+                    </div>
+                    <!--end::Group-->
+                    <h5 class="text-dark font-weight-bold mb-10">User Role:</h5>
+                    
+                    <div class="form-group row">
+                      <label class="col-3 col-form-label">User Role</label>
+                      <div class="col-9 col-form-label">
+                        <div class="radio-inline">
+                          <label class="radio radio-outline radio-outline-2x radio-primary">
+                            <input type="radio" name="radios16" />
+                            <span></span>Designer
+                          </label>
+                          <label class="radio radio-outline radio-outline-2x radio-primary">
+                            <input type="radio" name="radios16" checked="checked" />
+                            <span></span>Shop Owner
+                          </label>
+                          <label class="radio radio-outline radio-outline-2x radio-primary radio-disabled">
+                            <input type="radio" name="radios16" disabled="disabled" />
+                            <span></span>B2B
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                        
+                  
+                  </div>
+                  <!--end::Wizard Step 1-->
+                </div>
+              </div>
+              <div></div><div></div><div></div>
+            </form>
+            <!--end::Wizard Form-->
+          </div>
+        </div>
+      </div>
+      <!--end::Body-->
+    </div>
+    <!--end::Container-->
+  </div>
+  <!--end::Entry-->

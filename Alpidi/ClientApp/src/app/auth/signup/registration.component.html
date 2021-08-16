@@ -1,0 +1,47 @@
+<div class="login-signup">
+  <div class="text-center mb-10 mb-lg-20">
+    <h3 class="">Sign Up</h3>
+    <p class="text-muted font-weight-bold">Enter your details to create your account</p>
+  </div>
+  <div class="form text-left" id="kt_login_signup_form">
+    <div class="form-group py-2 m-0">
+      <label class="fs-1p3">Firstname</label>
+      <input class="form-control h-auto placeholder-dark-75" type="text" id="firstname" name="firstname" #firstname="ngModel" [(ngModel)]="signup_user.firstname" required />
+    </div>
+    <div class="form-group py-2 m-0">
+      <label class="fs-1p3">Lastname</label>
+      <input class="form-control h-auto placeholder-dark-75" type="text" id="lastname" name="lastname" #lastname="ngModel" [(ngModel)]="signup_user.lastname" required />
+    </div>
+    <div class="form-group py-2 m-0">
+      <label class="fs-1p3">Username & Email</label>
+      <input class="form-control h-auto placeholder-dark-75" type="text" autocomplete="off" id="email" name="email" #email="ngModel" [(ngModel)]="signup_user.email" required />
+    </div>
+    <div class="form-group py-2 m-0">
+      <label class="fs-1p3">Password</label>
+      <input class="form-control h-auto placeholder-dark-75" type="password" id="password" name="password" #password="ngModel" [(ngModel)]="signup_user.password" required />
+    </div>
+    <div class="form-group py-2 m-0">
+      <label class="fs-1p3">Confirm Password</label>
+      <input class="form-control h-auto placeholder-dark-75" type="password" id="cpassword" name="cpassword" pattern="{{ password.value }}" #cpassword="ngModel" [(ngModel)]="signup_user.cpassword" required />
+    </div>
+    <label class="fs-1p3 py-2 mt-3">User Role</label>
+    <div class="radio-inline">      
+      <label class="radio radio-outline radio-outline-2x radio-primary">
+        <input type="radio" name="selectedrole" checked="checked" value="shopowner" [(ngModel)]="selectedrole" />
+        <span></span>Shop Owner
+      </label>
+      <label class="radio radio-outline radio-outline-2x radio-primary">
+        <input type="radio" name="selectedrole" value="printhouse" [(ngModel)]="selectedrole" />
+        <span></span>Print House
+      </label>
+    </div>
+    <div class="form-group d-flex flex-wrap flex-center mt-10">
+      <button id="kt_login_signup_submit"
+              [disabled]="firstname.errors || lastname.errors || email.errors || password.error || !password.dirty || cpassword.errors || !cpassword.dirty"
+              class="btn btn-primary btn-pill font-weight-bold px-9 py-4 my-3 mx-2" (click)="submit()">
+        Submit
+      </button>
+      <button id="kt_login_signup_cancel" class="btn btn-outline-primary font-weight-bold px-9 py-4 my-3 mx-2" (click)="redirectToLogin()">Cancel</button>
+    </div>
+  </div>
+</div>

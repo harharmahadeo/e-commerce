@@ -1,0 +1,30 @@
+.accordion.accordion-toggle-arrow {
+  .card {
+    .card-header {
+      .card-title {
+        color: #3F4254;
+        position: relative;
+      }
+    }
+  }
+}
+
+.accordion.accordion-light {
+  .card {
+    &:first-child {
+      .card-header {
+        margin: 0;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #f5f5f5;
+      }
+    }
+
+    .card-body {
+      padding: 3rem 0 3rem 0;
+    }
+  }
+}
+
+.crd-height {
+  height: calc(100vh - 246px);
+}

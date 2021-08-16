@@ -1,0 +1,29 @@
+.w-100 {
+  width: 100%;
+}
+
+.fs-1p3 {
+  font-size: 1.3rem !important;
+}
+
+.brand-text {
+  color: #3699ff;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.login-text {
+  color: #000000;
+  font-size: 17px;
+  font-weight: 800;
+  margin-bottom: 0px;
+}
+
+.link {
+  color: #3699ff !important;
+}
+
+.p-10 {
+  padding: 10px !important;
+}

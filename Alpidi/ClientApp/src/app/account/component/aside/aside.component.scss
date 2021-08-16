@@ -1,0 +1,20 @@
+.aside {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 98;
+
+    .aside-menu {
+        margin: 0;
+    }
+}
+// fixed text line break issue on minimized aside hover
+.menu-text {
+    white-space: nowrap;
+}
+.icon-size {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
